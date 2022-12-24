@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateFragment">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="@+id/projTitleEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/projTitleEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Project Title"
+        android:textSize="16pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/projDescEdit"
+        android:layout_width="297dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="28dp"
+        android:hint="Project Description"
+        android:textSize="12pt"
+        app:layout_constraintStart_toStartOf="@+id/projKeywordsEdit"
+        app:layout_constraintTop_toBottomOf="@+id/projKeywordsEdit" />
+
+    <EditText
+        android:id="@+id/projKeywordsEdit"
+        android:layout_width="297dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        android:hint="Search Keywords"
+        android:textSize="12pt"
+        app:layout_constraintStart_toStartOf="@+id/projFavouriteEdit"
+        app:layout_constraintTop_toBottomOf="@+id/projFavouriteEdit" />
+
+    <EditText
+        android:id="@+id/projAuthorsEdit"
+        android:layout_width="297dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="32dp"
+        android:hint="Project Authors"
+        android:textSize="12pt"
+        app:layout_constraintStart_toStartOf="@+id/projTitleEdit"
+        app:layout_constraintTop_toBottomOf="@+id/projTitleEdit" />
+
+    <EditText
+        android:id="@+id/projLinkEdit"
+        android:layout_width="297dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="28dp"
+        android:hint="Project Links"
+        android:textSize="12pt"
+        app:layout_constraintStart_toStartOf="@+id/projAuthorsEdit"
+        app:layout_constraintTop_toBottomOf="@+id/projAuthorsEdit" />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="94dp"
+        android:layout_marginBottom="16dp"
+        android:text="Create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/projDescEdit"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/create"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/create"
+        app:layout_constraintTop_toTopOf="@+id/create"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Switch
+        android:id="@+id/projFavouriteEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Favourite"
+        app:layout_constraintStart_toStartOf="@+id/projLinkEdit"
+        app:layout_constraintTop_toBottomOf="@+id/projLinkEdit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
