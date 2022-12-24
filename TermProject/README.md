@@ -1,4 +1,4 @@
-# Android Clone
+# Notion Clone
 Sai Kalyana Raman(U24553100)\
 Shatrugna Rao Korukanti(U43517028)
 
